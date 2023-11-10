@@ -67,19 +67,43 @@ color: white
 
   
 
-
-p {
+details {
   color: rgb(255, 255, 255);
-  text-indent: 50px;
   font-style: italic;
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 28px;
-  text-align: left;
-  text-align: justify;
   text-align: center;
+  align-items: baseline;
+  max-width: 50ch;
+  margin: auto;
+}
 
-  
+details summary {
+  font-weight: bold;
+  margin: 30px;
+}
+
+details div {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+details p {
+  margin: 40px;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 28px;
+  text-align: center;
+  align-items: baseline;
+  max-width: 50ch;
+  margin: 50px auto;
 }
 
 .scrollmenu {
@@ -364,4 +388,3 @@ http://stackoverflow.com/a/34696029/383904
     
   }
 
-  
