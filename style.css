@@ -8,6 +8,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   
+  
 }
 
 .vdo{
@@ -23,10 +24,11 @@ body{
   }
 
   a {
-    font-size: 20px;
+    font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
     text-decoration: none;
+    
   }
 
 h1 {
@@ -34,7 +36,7 @@ h1 {
   color: rgb(255, 255, 255);
   font-size: 50px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 300px;
   
 }
 
@@ -118,6 +120,39 @@ top: 0;
 width: 100%;
 }
 
+img{
+  margin: 5px;
+  display: block;
+  border: 3px solid #ccc;
+  width: 70px;
+  float: left;
+  width: 180px;
+  height: 160px;
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  z-index: -99;
+
+  bottom: 10px;
+  left: 12px;
+
+
+
+
+}
+h3{
+  padding: 15px;
+  bottom: 15;
+  left: 10px;
+  position:relative
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+  
+
   li {
     float: left;
     
@@ -189,6 +224,9 @@ div.desc {
 p{
   bottom: 0;
 }
+  
+
+
 
 #horizontalcentral1{
   display: flex;
@@ -387,4 +425,55 @@ http://stackoverflow.com/a/34696029/383904
     margin-top:29% ;
     
   }
+.lien {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: -270px;
+  left: 0;
+
+}
+btn {
+  display: grid;
+  place-items: center;
+  background: #e3edf7;
+  padding: 1.4em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+	      -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.5em);
+}
+
+.btn svg {
+  transition: transform 0.5s;
+}
+
+.btn:hover svg {
+  transform: scale(0.9) rotate(360deg);
+  fill: #333333;
+}
+.imgind{
+  position: absolute;
+  z-index: 1;
+  left: 100%;
+  top: 0;
+  border: unset;
+  width: 150px;
+  transform: translateX(-200px);
+  float: none;
+}
 
